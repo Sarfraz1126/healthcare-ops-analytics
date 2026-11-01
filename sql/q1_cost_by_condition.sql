@@ -1,3 +1,5 @@
+-- Q1: Top 10 conditions by total cost (social findings & situations excluded)
+
 SELECT c.description,
        COUNT(*) AS visits,
        ROUND(SUM(e.total_claim_cost)::numeric, 0)  AS total_cost,
