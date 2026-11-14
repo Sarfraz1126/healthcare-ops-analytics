@@ -29,6 +29,10 @@ for table, date_cols in TABLES.items():
     # Clean column names first: strip hidden spaces, make lowercase
     df.columns = [c.strip().lower() for c in df.columns]
 
+        # Strip hidden spaces from every text value
+    for col in df.select_dtypes(include="object").columns:
+        df[col] = df[col].str.strip()
+
     if table == "patients":
         df = df.drop(columns=[c.lower() for c in PII_COLUMNS], errors="ignore")
 
