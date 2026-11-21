@@ -60,3 +60,6 @@ PostgreSQL (data storage and queries) · Python/pandas (cleaning) · Power BI (d
 ## Status
 
 🚧 In progress
+
+The re-admission rate cause -
+"The all-cause 30-day readmission rate is 35.5%, roughly double typical real-world benchmarks. Investigation shows this is driven by patients with regular scheduled admissions (e.g. ~monthly 1-day stays), which this dataset doesn't label as planned. A production analysis would exclude planned readmissions."
