@@ -1,2 +1,3 @@
 imaging_studies stores one row per image, not per study (chest CT ≈ 335 rows/study). Always count scans with COUNT(DISTINCT id).
 Inpatient descriptions are generic (“Encounter for problem”); planned vs unplanned admissions can’t be distinguished. Q2 reports all-cause 30-day readmissions. Some patients show regular ~monthly stays (likely scheduled treatment) that inflate the rate.
+Q3: 94% of inpatient stays (1,624/1,728) last 1 day; median 1 day. Mean is distorted by extreme outliers (one 4,969-day stay ≈ 13.6 years, likely long-term care modelled as an encounter): mean 4.5 days with it, 1.6 without. Report median + distribution, flag outliers.
